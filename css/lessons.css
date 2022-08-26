@@ -310,3 +310,10 @@ nav li a:hover {
   }
 }
 /*# sourceMappingURL=index.css.map */
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
