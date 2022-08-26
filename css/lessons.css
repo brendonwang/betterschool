@@ -317,3 +317,7 @@ nav li a:hover {
 .column {
   flex: 50%;
 }
+.column .a{
+  text-decoration: none;
+  align-self: center;
+}
