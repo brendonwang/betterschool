@@ -107,8 +107,8 @@ function hide() {
   cssStyle(ready, { display: "none" });
   load(0);
 }
-function end(){
-    if (i > questions.length - 1) {
+function end() {
+  if (i > questions.length - 1) {
     cssStyle(question, { display: "none" });
 
     cssStyle(b1, { display: "none" });
@@ -120,8 +120,8 @@ function end(){
 function b1click() {
   click = true;
   answer = b1.innerText;
-  if (correct_answer[questions[i]] == answer){
-    ++coins.innerHTML;
+  if (correct_answer[questions[i]] == answer) {
+    coins.innerText = parseInt(coins.innerText) + 1;
   }
   load(++i);
   console.log(i);
@@ -130,32 +130,31 @@ function b1click() {
 function b2click() {
   click = true;
   answer = b2.innerText;
-  if (correct_answer[questions[i]] == answer){
-    ++coins.innerHTML;
+  if (correct_answer[questions[i]] == answer) {
+    coins.innerText = parseInt(coins.innerText) + 1;
   }
   load(++i);
   console.log(i);
   end();
-  coins.innerText = coins;
 }
 function b3click() {
   click = true;
   answer = b3.innerText;
-  if (correct_answer[questions[i]] == answer){
-    ++coins.innerHTML;
+  if (correct_answer[questions[i]] == answer) {
+    coins.innerText = parseInt(coins.innerText) + 1;
   }
   load(++i);
   console.log(i);
-  end()
-  
+  end();
 }
 function b4click() {
   click = true;
   answer = b4.innerText;
-  if (correct_answer[questions[i]] == answer){
-    ++coins.innerHTML;
+  if (correct_answer[questions[i]] == answer) {
+    coins.innerText = parseInt(coins.innerText) + 1;
   }
   load(++i);
   console.log(i);
-  end()
+  end();
 }
+//can i make a shop @invisibleflame
