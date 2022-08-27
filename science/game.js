@@ -23,14 +23,20 @@ const b1 = document.getElementById("b1");
 const b2 = document.getElementById("b2");
 const b3 = document.getElementById("b3");
 const b4 = document.getElementById("b4");
-
-const questions = shuffle(["A", "B", "C"]);
+b1.style.display = "none";
+b2.style.display = "none";
+b3.style.display = "none";
+b4.style.display = "none";
+question.style.display = "none";
+//hi i added some questions you can check it
+//you just need to delete the thing at the top and the last 2 buttons 
+const questions = shuffle(["What is salmonella usually found in?", "Can energy be destroyed?", "When you use an air conditioner, does it make the outside warmer?"]);
 const answer_choices = {
-  A: ["A", "B", "C", "D"],
-  B: ["A", "B"],
-  C: ["A", "B", "C", "D"],
+  "What is salmonella usually found in?": ["Chicken", "Grass", "Cooked Eggs", "Meat"],
+  "Can energy be destroyed?": ["Yes", "No"],
+  "When you use an air conditioner, does it make the outside warmer?": ["Yes", "No"]
 };
-const correct_answer = { A: "A", B: "B", C: "C" };
+const correct_answer = { "What is salmonella usually found in?": "Chicken", "Can energy be destroyed?": "No", : "C" };
 let click = false;
 let answer = "";
 let i = 0;
@@ -59,9 +65,9 @@ function load(i){
       b3.innerText = answer_choices[questions[i]][0];
     }
     if (answer_choices[questions[i]].length < 4){
-      b3.sytle.display = "none";
+      b4.sytle.display = "none";
     } else{
-      b3.innerText = answer_choices[questions[i]][3];
+      b4.innerText = answer_choices[questions[i]][3];
     }
     b1.innerText = answer_choices[questions[i]][0];
     b2.innerText = answer_choices[questions[i]][1];
@@ -70,8 +76,10 @@ function load(i){
 
   }
 }
-load(0);
-
+function hide(){
+  load(0);
+  question.style.display = "inline";
+}
 function b1click() {
   click = true;
   answer = b1.innerText;
