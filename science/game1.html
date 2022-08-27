@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/lessons.css" />
   </head>
 
-  <body>
+  <body onload = "game()">
     <div class="navbar">
       <div class="container">
         <a class="logo" href="/index.html">School <span>2.0</span></a>
@@ -22,13 +22,33 @@
     </div>
   </body>
   <canvas id="myCanvas" width="480" height="320"> </canvas>
+  <p id="question">Question</p>
+  <div id="anwers"></div>
   <script>
-    const canvas = document.getElementById("myCanvas");
-    const ctx = canvas.getContext("2d");
-    ctx.beginPath();
-    ctx.rect(20, 40, 50, 50);
-    ctx.fillStyle = "#FF0000";
-    ctx.fill();
-    ctx.closePath();
+    function shuffleArray(array) {
+      for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+      }
+    }
+    function game(){
+      alert("HEKSFasdfadsfasdfdsafasdfasdfasdfsadafsdasdfasdfasdfasfafaasdadfadsffD");
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+      const question = docuemnt.getElementById("question")
+      const questions = ["A", "B", "C"];
+      const answer_choices = {
+        A: ["A", "B", "C", "D"],
+        B: ["A", "B", "C", "D"],
+        C: ["A", "B", "C", "D"],
+      };
+      const correct_answer = { A: "A", B: "B", C: "C" };
+      shuffleArray(questions);
+      for(int i = 0; i < questions.length; ++i){
+        question.innerText = questions[i];
+      }
+    }
   </script>
 </html>
