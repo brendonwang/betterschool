@@ -51,7 +51,7 @@ ul {
 }
 
 section {
-  padding: 5em 2em;
+  padding: 0em 0em 0em 0em;
 }
 
 .hero {
@@ -321,4 +321,7 @@ nav li a:hover {
 }
 .column .center{
   text-decoration: none;
+}
+.img{
+  padding: 10em 0.5em 0.5em 0.5em;
 }
