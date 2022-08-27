@@ -23,7 +23,7 @@ const b2 = document.getElementById("b2");
 const b3 = document.getElementById("b3");
 const b4 = document.getElementById("b4");
 
-const questions = ["A", "B", "C"];
+const questions = shuffle("A", "B", "C");
 const answer_choices = {
   A: ["A", "B", "C", "D"],
   B: ["A", "B", "C", "D"],
@@ -32,13 +32,14 @@ const answer_choices = {
 const correct_answer = { A: "A", B: "B", C: "C" };
 let click = false;
 let answer = "";
-shuffle(questions);
 for (let i = 0; i < questions.length; ++i) {
   question.innerText = questions[i];
-  shuffle(answer_choices[i]);
-  for (let j = 0; j < 4; ++j){
-    document.getElementById("b"+j).innerText = answer_choices[i][j];
-  }
+  answer_choices[questions[i]] = shuffle(answer_choices[questions[i]]);
+  b1.innerText = answer_choices[question[i]][0];
+  b2.innerText = answer_choices[question[i]][1];
+  b3.innerText = answer_choices[question[i]][2];
+  b4.innerText = answer_choices[question[i]][3];
+  
   while(!click){}
 }
 function b1click(){
