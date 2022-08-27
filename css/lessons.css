@@ -290,15 +290,38 @@ nav li a:hover {
   top: 8em;
   left: 0.3em;
 }
+.answers{
+  text-align:center;
+}
 button {
   background-color:var(--primary-color);
+  display: inline;
   border: none;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   margin: 4px 2px;
-  cursor: pointer;  border-radius: 25%;
-  width: 50%;
-  height:25%
+  cursor: pointer;  border-radius: 2em;
+  width: 49%;
+  height:10em;
+}
+.question{
+  background-color:var(--primary-color);
+  
+  display: inline;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;  border-radius: 2em;
+  width: 95%;
+  text-align: center;
+  height:5em;
+
+}
+.questiondiv{
+  text-align:center;
 }
