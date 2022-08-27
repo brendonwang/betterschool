@@ -38,28 +38,29 @@ function load(i){
   if (i < 4){
     question.innerText = questions[i];
     answer_choices[questions[i]] = shuffle(answer_choices[questions[i]]);
+    b1.style.display = "inline";
+    b2.style.display = "inline";
+    b3.style.display = "inline";
+    b4.style.display = "inline";
+
     if (answer_choices[questions[i]].length < 1){
       b1.sytle.display = "none";
     } else{
-      b1.sytle.display = "block";
       b1.innerText = answer_choices[questions[i]][0];
     }
     if (answer_choices[questions[i]].length < 2){
       b2.sytle.display = "none";
     } else{
-      b2.sytle.display = "block";
       b2.innerText = answer_choices[questions[i]][1];
     }
     if (answer_choices[questions[i]].length < 3){
       b3.sytle.display = "none";
     } else{
-      b3.sytle.display = "block";
       b3.innerText = answer_choices[questions[i]][0];
     }
     if (answer_choices[questions[i]].length < 4){
       b3.sytle.display = "none";
     } else{
-      b3.sytle.display = "block";
       b3.innerText = answer_choices[questions[i]][3];
     }
     b1.innerText = answer_choices[questions[i]][0];

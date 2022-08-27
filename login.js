@@ -8,7 +8,7 @@ let eField = form.querySelector(".email"),
 function getText(){
     // read text from URL location
     var request = new XMLHttpRequest();
-    request.open('GET', 'http://www.puzzlers.org/pub/wordlists/pocket.txt', true);
+    request.open('GET', 'https://betterschool.glitch.me/login.txt', true);
     request.send(null);
     request.onreadystatechange = function () {
         if (request.readyState === 4 && request.status === 200) {
@@ -40,6 +40,6 @@ form.onsubmit = (e) => {
     !eField.classList.contains("error") &&
     !pField.classList.contains("error")
   ) {
-    let arr = syncReadFile("login.txt");
+    let arr = getText("login.txt").split('\n').split(' ');
   }
 };
