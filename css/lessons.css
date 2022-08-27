@@ -294,3 +294,6 @@ button {
 .questiondiv {
   text-align: center;
 }
+p{
+  display:inline;
+}
