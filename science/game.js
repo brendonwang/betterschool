@@ -35,12 +35,11 @@ let answer = "";
 for (let i = 0; i < questions.length; ++i) {
   question.innerText = questions[i];
   answer_choices[questions[i]] = shuffle(answer_choices[questions[i]]);
-  b1.innerText = answer_choices[question[i]][0];
-  b2.innerText = answer_choices[question[i]][1];
-  b3.innerText = answer_choices[question[i]][2];
-  b4.innerText = answer_choices[question[i]][3];
-  
-  while(!click){}
+  console.log (questions[i]);
+  b1.innerText = answer_choices[questions[i]][0];
+  b2.innerText = answer_choices[questions[i]][1];
+  b3.innerText = answer_choices[questions[i]][2];
+  b4.innerText = answer_choices[questions[i]][3];
 }
 function b1click(){
   click = true;

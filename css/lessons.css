@@ -309,19 +309,23 @@ button {
 .question{
   background-color:var(--primary-color);
   
-  display: inline;
   border: none;
   padding: 15px 32px;
+  line-height: 5em;
+  display: inline-block;
+  vertical-align: middle;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   margin: 4px 2px;
   cursor: pointer;  border-radius: 2em;
-  width: 95%;
+  width: 98%;
   text-align: center;
   height:5em;
 
+  text-align: center;
+
 }
 .questiondiv{
-  text-align:center;
+
+  text-align: center;
 }
