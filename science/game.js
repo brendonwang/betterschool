@@ -33,33 +33,40 @@ const answer_choices = {
 const correct_answer = { A: "A", B: "B", C: "C" };
 let click = false;
 let answer = "";
-for (let i = 0; i < questions.length; ++i) {
-  question.innerText = questions[i];
-  answer_choices[questions[i]] = shuffle(answer_choices[questions[i]]);
-  b1.innerText = answer_choices[questions[i]][0];
-  b2.innerText = answer_choices[questions[i]][1];
-  b3.innerText = answer_choices[questions[i]][2];
-  b4.innerText = answer_choices[questions[i]][3];
-  if (answer == correct_answer[questions[i]]) {
-    coins++;
-    question.innerText = coins;
+let i = 0;
+function load(i){
+  if (i < 4){
+    question.innerText = questions[i];
+    answer_choices[questions[i]] = shuffle(answer_choices[questions[i]]);
+    b1.innerText = answer_choices[questions[i]][0];
+    b2.innerText = answer_choices[questions[i]][1];
+    b3.innerText = answer_choices[questions[i]][2];
+    b4.innerText = answer_choices[questions[i]][3];
+
   }
 }
+load(0);
 
 function b1click() {
   click = true;
   answer = b1.innerText;
+  load(i++);
 }
 function b2click() {
   click = true;
   answer = b2.innerText;
+  load(i++);
+
   
 }
 function b3click() {
   click = true;
   answer = b3.innerText;
+  load(i++);
+
 }
 function b4click() {
   click = true;
   answer = b4.innerText;
+  load(i++);
 }
