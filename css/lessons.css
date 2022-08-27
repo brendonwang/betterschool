@@ -290,3 +290,8 @@ nav li a:hover {
   top: 8em;
   left: 0.3em;
 }
+button {
+  background-color: #007af3;
+  border-radius = 25%;
+  width = 50%;
+}
