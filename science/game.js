@@ -1,7 +1,7 @@
 function shuffle(array) {
   array.sort(() => Math.random() - 0.5);
+  return array
 }
-
 const question = document.getElementById("question");
 const b1 = document.getElementById("b1");
 const b2 = document.getElementById("b2");
@@ -143,3 +143,4 @@ function b4click() {
   end();
 }
 //can i make a shop @invisibleflame
+//Yes
