@@ -52,9 +52,6 @@ ul {
 .hero {
   text-align: center;
 }
-ul il img{
-  
-}
 .left-col .subhead {
   text-transform: uppercase;
   font-weight: bold;
@@ -91,33 +88,6 @@ ul il img{
 .hero-img {
   width: 70%;
   margin-top: 3em;
-}
-
-ul.features-list {
-  margin: 0;
-  padding-left: 0.1em;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(19rem, 1fr)) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-}
-
-ul.features-list li {
-  font-size: 1.1em;
-  margin-bottom: 1em;
-  margin-left: 2em;
-  position: relative;
-}
-
-ul.features-list li:before {
-  content: "";
-  left: -2em;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("https://assets.codepen.io/2621168/bullet.svg");
-  background-size: contain;
-  margin-right: 0.5em;
 }
 
 h2 {
@@ -197,61 +167,54 @@ nav li a:hover {
   margin: 0.5em;
   cursor: pointer;
 }
-
-@media only screen and (min-width: 768px) {
-  .mobile-menu,
-  .mobile-menu-exit {
-    display: none;
-  }
-  .navbar .container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 180px auto;
-    grid-template-columns: 180px auto;
-    -webkit-box-pack: unset;
-    -ms-flex-pack: unset;
-    justify-content: unset;
-  }
-  .navbar nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    background: none;
-    position: unset;
-    height: auto;
-    width: 100%;
-    padding: 0;
-  }
-  .navbar nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .navbar nav a {
-    color: black;
-    font-size: 1em;
-    padding: 0.1em 1em;
-  }
-  .navbar nav ul.primary-nav {
-    margin: 0;
-  }
-  .navbar nav li.current a {
-    font-weight: bold;
-  }
-  .navbar nav li.go-premium-cta a {
-    color: var(--primary-color);
-    border: 3px solid var(--primary-color);
-    font-weight: bold;
-    border-radius: 5em;
-    margin-top: -0.2em;
-  }
-  .navbar nav li.go-premium-cta a:hover {
-    background: var(--primary-color);
-    color: white;
-  }
+.navbar .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 180px auto;
+  grid-template-columns: 180px auto;
+  -webkit-box-pack: unset;
+  -ms-flex-pack: unset;
+  justify-content: unset;
+}
+.navbar nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: none;
+  position: unset;
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+.navbar nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navbar nav a {
+  color: black;
+  font-size: 1em;
+  padding: 0.1em 1em;
+}
+.navbar nav ul.primary-nav {
+  margin: 0;
+}
+.navbar nav li.current a {
+  font-weight: bold;
+}
+.navbar nav li.go-premium-cta a {
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  font-weight: bold;
+  border-radius: 5em;
+  margin-top: -0.2em;
+}
+.navbar nav li.go-premium-cta a:hover {
+  background: var(--primary-color);
+  color: white;
 }
 
 @media only screen and (min-width: 1080px) {
@@ -292,11 +255,11 @@ nav li a:hover {
   top: 8em;
   left: 0.3em;
 }
-.answers{
-  text-align:center;
+.answers {
+  text-align: center;
 }
 button {
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   display: inline;
   border: none;
   padding: 15px 32px;
@@ -304,13 +267,14 @@ button {
   text-decoration: none;
   display: inline-block;
   margin: 4px 2px;
-  cursor: pointer;  border-radius: 2em;
+  cursor: pointer;
+  border-radius: 2em;
   width: 49%;
-  height:10em;
+  height: 10em;
 }
-.question{
-  background-color:var(--primary-color);
-  
+.question {
+  background-color: var(--primary-color);
+
   border: none;
   padding: 15px 32px;
   line-height: 5em;
@@ -319,15 +283,14 @@ button {
   text-align: center;
   text-decoration: none;
   margin: 4px 2px;
-  cursor: pointer;  border-radius: 2em;
+  cursor: pointer;
+  border-radius: 2em;
   width: 98%;
   text-align: center;
-  height:5em;
+  height: 5em;
 
   text-align: center;
-
 }
-.questiondiv{
-
+.questiondiv {
   text-align: center;
 }
