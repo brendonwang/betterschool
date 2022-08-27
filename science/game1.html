@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EduHack</title>
-    <script src = "/coins.js"></script>
-
+    <script data-main="/coins.js" src="/require.js"></script>
     <link rel="stylesheet" href="/css/lessons.css"/>
 
   </head>
@@ -31,7 +30,7 @@
         </nav>
       </div>
     </div>
-    <div id = "ready">
+    <div id = "ready" class = "ready">
       <h1>
         Are You Ready?
       </h1>
@@ -57,6 +56,14 @@
       <button id = "b4" onclick = "b4click()">
         b4
       </button>
+    </div>
+    <div id = "done" class = "ready">
+      <h1>
+        You finished with a score of <p id = "score">
+        123
+      </p>        
+      </h1>
+
     </div>
     
     <script src="game.js"></script>

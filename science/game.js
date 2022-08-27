@@ -8,6 +8,9 @@ const b2 = document.getElementById("b2");
 const b3 = document.getElementById("b3");
 const b4 = document.getElementById("b4");
 const ready = document.getElementById("ready");
+const done = document.getElementById("done");
+const score = document.getElementById("score");
+
 const coins = document.getElementById("coins");
 
 let cssStyle = (el, styles) => {
@@ -47,10 +50,11 @@ const correct_answer = {
   "Can energy be destroyed?": "No",
   "When you use an air conditioner, does it make the outside warmer?": "Yes",
 };
+cssStyle(done, {display: "none"});
 let click = false;
 let answer = "";
 let i = 0;
-let original_coins = coins.innerText;
+let j = 0;
 function load(i) {
   if (i < questions.length) {
     cssStyle(question, { display: "block" });
@@ -93,6 +97,7 @@ function hide() {
   load(0);
 }
 function end() {
+  
   if (i > questions.length - 1) {
     cssStyle(question, { display: "none" });
 
@@ -100,6 +105,8 @@ function end() {
     cssStyle(b2, { display: "none" });
     cssStyle(b3, { display: "none" });
     cssStyle(b4, { display: "none" });
+    cssStyle(done, {display: "inline"});
+    score.innerText = ((j).toString())
   }
 }
 function b1click() {
@@ -107,6 +114,7 @@ function b1click() {
   answer = b1.innerText;
   if (correct_answer[questions[i]] == answer) {
     coins.innerText = parseInt(coins.innerText) + 1;
+    j++;
   }
   load(++i);
   console.log(i);
@@ -117,6 +125,7 @@ function b2click() {
   answer = b2.innerText;
   if (correct_answer[questions[i]] == answer) {
     coins.innerText = parseInt(coins.innerText) + 1;
+    j++;
   }
   load(++i);
   console.log(i);
@@ -127,6 +136,7 @@ function b3click() {
   answer = b3.innerText;
   if (correct_answer[questions[i]] == answer) {
     coins.innerText = parseInt(coins.innerText) + 1;
+    j++;
   }
   load(++i);
   console.log(i);
@@ -137,6 +147,7 @@ function b4click() {
   answer = b4.innerText;
   if (correct_answer[questions[i]] == answer) {
     coins.innerText = parseInt(coins.innerText) + 1;
+    j++;
   }
   load(++i);
   console.log(i);
