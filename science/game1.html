@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EduHack</title>
-    <link rel="stylesheet" href="/css/lessons.css" />
+    <link rel="stylesheet" href="/css/lessons.css"/>
+    <script type="module" src="game.js"></script>
+
   </head>
 
   <body>
@@ -20,34 +22,9 @@
         </nav>
       </div>
     </div>
-    <body id="question" onload="game()">Question</body>
-    <div id="anwers"></div>
-    <script>
-      
-      function shuffleArray(array) {
-        for (var i = array.length - 1; i > 0; i--) {
-          var j = Math.floor(Math.random() * (i + 1));
-          var temp = array[i];
-          array[i] = array[j];
-          array[j] = temp;
-        }
-      }
-      function game(){
-        alert("HEKSFasdfadsfasdfdsafasdfasdfasdfsadafsdasdfasdfasdfasfafaasdadfadsffD");
-
-        const question = docuemnt.getElementById("question")
-        const questions = ["A", "B", "C"];
-        const answer_choices = {
-          A: ["A", "B", "C", "D"],
-          B: ["A", "B", "C", "D"],
-          C: ["A", "B", "C", "D"],
-        };
-        const correct_answer = { A: "A", B: "B", C: "C" };
-        shuffleArray(questions);
-        for(var i = 0; i < questions.length; ++i){
-          question.innerText = questions[i];
-        }
-      }
-    </script>
+    <p id="question">
+      Question
+    </p>
+    <div id="answers"></div>
   </body>
 </html>
