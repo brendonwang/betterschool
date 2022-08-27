@@ -1,6 +1,11 @@
 function shuffle(array) {
   array.sort(() => Math.random() - 0.5);
-  return array
+  return array;
+}
+async function fetchFile(file) {
+  const response = await fetch(file);
+  const exam = await response.text();
+  return exam;
 }
 const question = document.getElementById("question");
 const b1 = document.getElementById("b1");
@@ -19,6 +24,7 @@ let cssStyle = (el, styles) => {
   }
 };
 //type something.
+//balls
 //IF THERE IS A YES OPTION THERE SHOULD BE A NO OPTION
 cssStyle(b1, { display: "none" });
 cssStyle(b2, { display: "none" });
@@ -31,6 +37,18 @@ const questions = shuffle([
   "What is salmonella usually found in?",
   "Can energy be destroyed?",
   "When you use an air conditioner, does it make the outside warmer?",
+  "Can people with hemophilia easily heal wounds?",
+  "How many different protein molecules are in the clotting factors?",
+  "Does starch get broken down into glucose?",
+  "Does the pancreas make growth enzymes?",
+  "Does asthma only affect the breathing?",
+  "Do amino acids and protein relate?",
+  "Does the cold slow molecules down?",
+  "Does heat slow down molecules in the air?",
+  "Is it possible for molecules to go below absolute zero?",
+  "Is food poisoning poison or bacteria?",
+  "Are beans a good source of proteins?",
+  "Is bread a good source of fiber?",
 ]);
 const answer_choices = {
   "What is salmonella usually found in?": [
@@ -44,13 +62,43 @@ const answer_choices = {
     "Yes",
     "No",
   ],
+  "Can people with hemophilia easily heal wounds?": ["Yes", "No"],
+  "How many different protein molecules are in the clotting factors?": [
+    "12",
+    "13",
+  //balls 69420 ligma
+    "14",
+    "15",
+  ],
+  "Does starch get broken down into glucose?": ["Yes", "No"],
+  "Does the pancreas make growth enzymes?": ["Yes", "No"],
+  "Does asthma only affect the breathing?": ["Yes", "No"],
+  "Do amino acids and protein relate?": ["Yes", "No"],
+  "Does the cold slow molecules down?": ["Yes", "No"],
+  "Does heat slow down molecules in the air?": ["Yes", "No"],
+  "Is it possible for molecules to go below absolute zero?": ["Yes", "No"],
+  "Is food poisoning poison or bacteria?": ["Poison", "Bacteria"],
+  "Are beans a good source of proteins?": ["Yes", "No"],
+  "Is bread a good source of fiber?": ["Yes", "No"],
 };
 const correct_answer = {
   "What is salmonella usually found in?": "Chicken",
   "Can energy be destroyed?": "No",
   "When you use an air conditioner, does it make the outside warmer?": "Yes",
+  "Can people with hemophilia easily heal wounds?": "No",
+  "How many different protein molecules are in the clotting factors?": "13",
+  "Does starch get broken down into glucose?": "Yes",
+  "Does the pancreas make growth enzymes?": "No",
+  "Does asthma only affect the breathing?": "No",
+  "Do amino acids and protein relate?": "Yes",
+  "Does the cold slow molecules down?": "Yes",
+  "Does heat slow down molecules in the air?": "No",
+  "Is it possible for molecules to go below absolute zero?": "No",
+  "Is food poisoning poison or bacteria?": "Bacteria",
+  "Are beans a good source of proteins?": "Yes",
+  "Is bread a good source of fiber?": "No",
 };
-cssStyle(done, {display: "none"});
+cssStyle(done, { display: "none" });
 let click = false;
 let answer = "";
 let i = 0;
@@ -97,7 +145,6 @@ function hide() {
   load(0);
 }
 function end() {
-  
   if (i > questions.length - 1) {
     cssStyle(question, { display: "none" });
 
@@ -105,8 +152,14 @@ function end() {
     cssStyle(b2, { display: "none" });
     cssStyle(b3, { display: "none" });
     cssStyle(b4, { display: "none" });
-    cssStyle(done, {display: "inline"});
-    score.innerText = ((j).toString())
+    cssStyle(done, { display: "inline" });
+    score.innerText = j.toString();
+    fetchFile("/coins.json").then((value) => {
+      fetchFile("/username.txt").then((result) => {
+        console.log(result);
+        value[result] = parseInt(coins.innerText);
+      });
+    });
   }
 }
 function b1click() {

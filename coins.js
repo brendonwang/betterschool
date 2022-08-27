@@ -1,3 +1,4 @@
+import * as fs from 'fs';
 let coin = document.getElementById("coins");
 async function fetchFile(file) {
   const response = await fetch(file);
@@ -36,23 +37,19 @@ async function fetchFile(file) {
 //     }
 //   });
 // });
-require(["fs"], function (fs) {
-  //foo is now loaded.
-    fetchFile("/coins.json").then((value) => {
-      value = JSON.parse(value);
-      fetchFile("/username.txt").then((result) => {
-        if (value[result] == undefined) {
-          value[result] = 0;
-          value = JSON.stringify(value);
-          fs.writeFile("myjsonfile.json", value, "utf8");
-        } else {
-          coin.innerText = value[result];
-        }
-        console.log(value);
-        console.log(value[result]);
-      });
-    });
+fetchFile('/coins.json').then((value)=>{
+  value = JSON.parse(value);
+  fetchFile("/username.txt").then((result) => {
+  if (value[result] == undefined) {
+    value[result] = 0;
+  } else {
+    coin.innerText = value[result];
+  }
+  console.log(value);
+  });
+  fs.writeFile("coins.txt", value)
 });
+
 
 // let username = fetchFile("/username.txt").then(result => {});
 
