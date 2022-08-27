@@ -272,6 +272,10 @@ button {
   width: 49%;
   height: 10em;
 }
+button:hover{
+  background-color:pink;
+  border: 1px solid black;
+}
 .question {
   background-color: var(--primary-color);
 
@@ -296,4 +300,7 @@ button {
 }
 p{
   display:inline;
+}
+.ready{
+  text-align: center;
 }
