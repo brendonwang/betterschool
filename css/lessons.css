@@ -311,13 +311,14 @@ nav li a:hover {
 }
 /*# sourceMappingURL=index.css.map */
 .row {
+  
   display: flex;
 }
 
 .column {
   flex: 50%;
+  text-align: center;
 }
-.column .a{
+.column .center{
   text-decoration: none;
-  align-self: center;
 }
