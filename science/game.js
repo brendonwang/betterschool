@@ -27,7 +27,7 @@ const b4 = document.getElementById("b4");
 const questions = shuffle(["A", "B", "C"]);
 const answer_choices = {
   A: ["A", "B", "C", "D"],
-  B: ["A", "B", "C", "D"],
+  B: ["A", "B"],
   C: ["A", "B", "C", "D"],
 };
 const correct_answer = { A: "A", B: "B", C: "C" };
@@ -38,6 +38,30 @@ function load(i){
   if (i < 4){
     question.innerText = questions[i];
     answer_choices[questions[i]] = shuffle(answer_choices[questions[i]]);
+    if (answer_choices[questions[i]].length < 1){
+      b1.sytle.display = "none";
+    } else{
+      b1.sytle.display = "block";
+      b1.innerText = answer_choices[questions[i]][0];
+    }
+    if (answer_choices[questions[i]].length < 2){
+      b2.sytle.display = "none";
+    } else{
+      b2.sytle.display = "block";
+      b2.innerText = answer_choices[questions[i]][1];
+    }
+    if (answer_choices[questions[i]].length < 3){
+      b3.sytle.display = "none";
+    } else{
+      b3.sytle.display = "block";
+      b3.innerText = answer_choices[questions[i]][0];
+    }
+    if (answer_choices[questions[i]].length < 4){
+      b3.sytle.display = "none";
+    } else{
+      b3.sytle.display = "block";
+      b3.innerText = answer_choices[questions[i]][3];
+    }
     b1.innerText = answer_choices[questions[i]][0];
     b2.innerText = answer_choices[questions[i]][1];
     b3.innerText = answer_choices[questions[i]][2];
