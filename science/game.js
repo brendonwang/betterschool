@@ -53,6 +53,7 @@ function b1click() {
 function b2click() {
   click = true;
   answer = b2.innerText;
+  
 }
 function b3click() {
   click = true;
