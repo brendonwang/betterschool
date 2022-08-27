@@ -23,49 +23,59 @@ const b1 = document.getElementById("b1");
 const b2 = document.getElementById("b2");
 const b3 = document.getElementById("b3");
 const b4 = document.getElementById("b4");
+const ready = document.getElementById("ready");
+
+let cssStyle = (el, styles) => {
+      for (var property in styles) {
+          el.style[property] = styles[property];
+      }
+}
+//type something.
+
 b1.style.display = "none";
 b2.style.display = "none";
 b3.style.display = "none";
 b4.style.display = "none";
 question.style.display = "none";
-//hi i added some questions you can check it
-//you just need to delete the thing at the top and the last 2 buttons 
+
 const questions = shuffle(["What is salmonella usually found in?", "Can energy be destroyed?", "When you use an air conditioner, does it make the outside warmer?"]);
 const answer_choices = {
   "What is salmonella usually found in?": ["Chicken", "Grass", "Cooked Eggs", "Meat"],
   "Can energy be destroyed?": ["Yes", "No"],
   "When you use an air conditioner, does it make the outside warmer?": ["Yes", "No"]
 };
-const correct_answer = { "What is salmonella usually found in?": "Chicken", "Can energy be destroyed?": "No", : "C" };
+const correct_answer = { "What is salmonella usually found in?": "Chicken", "Can energy be destroyed?": "No", "When you use an air conditioner, does it make the outside warmer?": "Yes" };
 let click = false;
 let answer = "";
 let i = 0;
 function load(i){
   if (i < 4){
+    cssStyle(question, {display: "block"})
+
     question.innerText = questions[i];
     answer_choices[questions[i]] = shuffle(answer_choices[questions[i]]);
-    b1.style.display = "inline";
-    b2.style.display = "inline";
-    b3.style.display = "inline";
-    b4.style.display = "inline";
+    cssStyle(b1, {display:"inline"});
+    cssStyle(b2, {display:"inline"});
+    cssStyle(b3, {display:"inline"});
+    cssStyle(b4, {display:"inline"});
 
     if (answer_choices[questions[i]].length < 1){
-      b1.sytle.display = "none";
+      cssStyle(b1, {display:"none"})
     } else{
       b1.innerText = answer_choices[questions[i]][0];
     }
     if (answer_choices[questions[i]].length < 2){
-      b2.sytle.display = "none";
+      cssStyle(b2, {display:"none"})
     } else{
       b2.innerText = answer_choices[questions[i]][1];
     }
     if (answer_choices[questions[i]].length < 3){
-      b3.sytle.display = "none";
+      cssStyle(b3, {display:"none"})
     } else{
       b3.innerText = answer_choices[questions[i]][0];
     }
     if (answer_choices[questions[i]].length < 4){
-      b4.sytle.display = "none";
+      cssStyle(b4, {display:"none"})
     } else{
       b4.innerText = answer_choices[questions[i]][3];
     }
@@ -73,12 +83,13 @@ function load(i){
     b2.innerText = answer_choices[questions[i]][1];
     b3.innerText = answer_choices[questions[i]][2];
     b4.innerText = answer_choices[questions[i]][3];
-
+    
   }
 }
 function hide(){
+  cssStyle(ready, {display:"none"})
   load(0);
-  question.style.display = "inline";
+  
 }
 function b1click() {
   click = true;
