@@ -1,1 +1,31 @@
-{"name":"EduHackLogo.svg","date":"2022-08-26T23:42:29.080Z","url":"https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/EduHackLogo.svg","type":"image/svg+xml","size":3446,"imageWidth":500,"imageHeight":500,"thumbnail":"https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/thumbnails%2FEduHackLogo.svg","thumbnailWidth":330,"thumbnailHeight":330,"uuid":"JXryolmYR5nCa8IZ"}
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="500" height="500" viewBox="0 0 500 500" xml:space="preserve">
+<desc>Created with Fabric.js 4.6.0</desc>
+<defs>
+</defs>
+<g transform="matrix(1.2 0 0 1.2 250 250)" id="25hl0qsze1RF4qfeWRe6P"  >
+<path style="stroke: rgb(0,0,0); stroke-width: 25; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(50,255,0); fill-opacity: 0; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(0, 0)" d="M 0 -197.80666 C 109.18928 -197.80666 197.80666 -109.18928 197.80666 0 C 197.80666 109.18928 109.18928 197.80666 0 197.80666 C -109.18928 197.80666 -197.80666 109.18928 -197.80666 0 C -197.80666 -109.18928 -109.18928 -197.80666 0 -197.80666 z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 620 293.72)" id="42ny0l40E_1z9n-SRttL6"  >
+<path style="stroke: rgb(0,0,0); stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-opacity: 0; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(0, 0)" d="M 0 0" stroke-linecap="round" />
+</g>
+<g transform="matrix(1.19 0 0 1.34 240 240)" id="PS0Xxs0EX7pLl8CQuuuBh"  >
+<filter id="SVGID_81" y="-29%" height="158%" x="-37%" width="174%" >
+	<feGaussianBlur in="SourceAlpha" stdDeviation="5"></feGaussianBlur>
+	<feOffset dx="4" dy="4" result="oBlur" ></feOffset>
+	<feFlood flood-color="rgb(0,0,0)" flood-opacity="1"/>
+	<feComposite in2="oBlur" operator="in" />
+	<feMerge>
+		<feMergeNode></feMergeNode>
+		<feMergeNode in="SourceGraphic"></feMergeNode>
+	</feMerge>
+</filter>
+<path style="stroke: rgb(0,0,0); stroke-width: 25; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-opacity: 0; fill-rule: nonzero; opacity: 1;filter: url(#SVGID_81);" vector-effect="non-scaling-stroke"  transform=" translate(0, 0)" d="M 40 -80 L -40 0 L 40 80" stroke-linecap="round" />
+</g>
+</svg>{"name":"EduHackLogo.svg","date":"2022-08-26T23:42:29.080Z","url":"https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/EduHackLogo.svg","type":"image/svg+xml","size":3446,"imageWidth":500,"imageHeight":500,"thumbnail":"https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/thumbnails%2FEduHackLogo.svg","thumbnailWidth":330,"thumbnailHeight":330,"uuid":"JXryolmYR5nCa8IZ"}
+{"name":"back.svg","date":"2022-08-27T00:18:43.443Z","url":"https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/back.svg","type":"image/svg+xml","size":2315,"imageWidth":500,"imageHeight":500,"thumbnail":"https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/thumbnails%2Fback.svg","thumbnailWidth":330,"thumbnailHeight":330,"uuid":"UIYCPpPG1xE05Gn9"}
+{"uuid":"UIYCPpPG1xE05Gn9","deleted":true}
+{"name":"back.svg","date":"2022-08-27T00:18:43.823Z","url":"https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/back.svg","type":"image/svg+xml","size":2315,"imageWidth":500,"imageHeight":500,"thumbnail":"https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/thumbnails%2Fback.svg","thumbnailWidth":330,"thumbnailHeight":330,"uuid":"6ATbcV4L0oNkUYBS"}
+{"uuid":"6ATbcV4L0oNkUYBS","deleted":true}
+{"name":"back.svg","date":"2022-08-27T00:25:01.277Z","url":"https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/back.svg","type":"image/svg+xml","size":2327,"imageWidth":500,"imageHeight":500,"thumbnail":"https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/thumbnails%2Fback.svg","thumbnailWidth":330,"thumbnailHeight":330,"uuid":"8XNxL3OU94LJnzXQ"}
