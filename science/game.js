@@ -31,11 +31,15 @@ let cssStyle = (el, styles) => {
       }
 }
 //type something.
-
+//IF THERE IS A YES OPTION THERE SHOULD BE A NO OPTION
 b1.style.display = "none";
 b2.style.display = "none";
 b3.style.display = "none";
-b4.style.display = "none";
+b4.style.display = "none";    cssStyle(b1, {display:"inline"});
+    cssStyle(b2, {display:"inline"});
+    cssStyle(b3, {display:"inline"});
+    cssStyle(b4, {display:"inline"});
+
 question.style.display = "none";
 
 const questions = shuffle(["What is salmonella usually found in?", "Can energy be destroyed?", "When you use an air conditioner, does it make the outside warmer?"]);
@@ -94,23 +98,52 @@ function hide(){
 function b1click() {
   click = true;
   answer = b1.innerText;
-  load(i++);
+  load(++i);
+    console.log(i);
+
+  if(i > questions.length-2){
+    b1.style.display = "none";
+b2.style.display = "none";
+b3.style.display = "none";
+b4.style.display = "none";
+  }
 }
 function b2click() {
   click = true;
   answer = b2.innerText;
-  load(i++);
+  load(++i);
+    console.log(i);
 
+  if(i > questions.length-2){
+    b1.style.display = "none";
+b2.style.display = "none";
+b3.style.display = "none";
+b4.style.display = "none";
+  }
   
 }
 function b3click() {
   click = true;
   answer = b3.innerText;
-  load(i++);
+  load(++i);
+    console.log(i);
 
+  if(i > questions.length-2){
+    b1.style.display = "none";
+b2.style.display = "none";
+b3.style.display = "none";
+b4.style.display = "none";
+  }
 }
 function b4click() {
   click = true;
   answer = b4.innerText;
-  load(i++);
+  load(++i);
+  console.log(i);
+  if(i > questions.length-2){
+    b1.style.display = "none";
+b2.style.display = "none";
+b3.style.display = "none";
+b4.style.display = "none";
+  }
 }
