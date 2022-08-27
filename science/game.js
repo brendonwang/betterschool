@@ -17,7 +17,6 @@ function shuffle(array) {
 
   return array;
 }
-let coins = 0;
 const question = document.getElementById("question");
 const b1 = document.getElementById("b1");
 const b2 = document.getElementById("b2");
@@ -121,6 +120,9 @@ function end(){
 function b1click() {
   click = true;
   answer = b1.innerText;
+  if (correct_answer[questions[i]] == answer){
+    ++coins.innerHTML;
+  }
   load(++i);
   console.log(i);
   end();
@@ -128,6 +130,9 @@ function b1click() {
 function b2click() {
   click = true;
   answer = b2.innerText;
+  if (correct_answer[questions[i]] == answer){
+    ++coins.innerHTML;
+  }
   load(++i);
   console.log(i);
   end();
@@ -136,6 +141,9 @@ function b2click() {
 function b3click() {
   click = true;
   answer = b3.innerText;
+  if (correct_answer[questions[i]] == answer){
+    ++coins.innerHTML;
+  }
   load(++i);
   console.log(i);
   end()
@@ -144,6 +152,9 @@ function b3click() {
 function b4click() {
   click = true;
   answer = b4.innerText;
+  if (correct_answer[questions[i]] == answer){
+    ++coins.innerHTML;
+  }
   load(++i);
   console.log(i);
   end()
