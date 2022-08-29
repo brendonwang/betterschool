@@ -66,7 +66,7 @@ function check(){
   if (localStorage.bought.includes("https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/arceus-removebg-preview.png?v=1661639967015")){
     achievement.push("The Original One");
   }
-  if (localStorage.bought.length == 10){
+  if (JSON.parse(localStorage.bought).length == 10){
     achievement.push("Pokemon Master");
   }
   
