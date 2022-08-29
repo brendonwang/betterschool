@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School 2.0</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="/css/lessons.css" />
+
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="container">
+      <a class="logo" href="/index.html">School <span>2.0</span></a>
+
+      <nav>
+        <ul class="primary-nav">
+          <li><a href="/index.html">Home</a></li>
+          <li class="current"><a href="/lessons.html">Lessons</a></li>
+          <li><a href="/shop.html">Shop</a></li>
+          <li><a href="/achievements.html">Achievements</a></li>
+        </ul>
+        <ul class="secondary-nav">
+          <div>
+            <li>
+              <p id="coins">0</p>x<img
+                src="https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/coin.svg?v=1661572495636"
+                width="20px" height="20px"> &nbsp &nbsp &nbsp &nbsp
+            </li>
+            <li><img
+                src="https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/poke-removebg-preview.png?v=1661644487585"
+                width="40px" height="40px" class="avatar-nav" id = "avatar-nav"></li>
+          </div>
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="img">
+    <a href="/math/index.html"><img
+        src="https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/back.svg?v=1661561506739" width="50px"
+        height="50px" /></a>
+  </div>
+  <section>
+    <b>Basic Techniques for Solving Equations</b>
+    <br><br>
+    <i>Isolation</i><br><br>
+    Isolation is a simple way to solve an euqation by manipulating both sides until the variable is <i>isolated</i> on
+    one side and the constant is on the other side.
+    $$3r-2+2r=7-r+3$$
+    To solve this problem, we first simplify both sides to get \(5r -2=10-r\). Then, we add \(r+2\) to both sides to get
+    \(r=12\). Finally, dividing by \(6\) gives \(r=2\). <br><br>
+    <i> Substitution </i><br><br>
+    To solve multiple linear equations with multiple variables we may use substitution. Substitution means solving one of the equations for one of the variables and substituting the result into other equations in the system.
+    $$x-y=4$$
+    $$2x+u=29$$
+    The first equation allows us to easily express \(x\) in terms of \(y\). Thus we add \(y\) to both sides of the first equation, which gives us \(x=y+4\). We can then replce \(x\) in the second equation with \(y+4\) to give 
+    $$2(y+4)+y=29$$
+    Using isolation, we solve for \(y\) to get \(y=7\) and \(x=y+4=7+4=11\).
+    <i>Elimination</i><br><br>
+    Elimination is a slightly more advanced method of solving equations by simplifyig a system of equations by combining equations to produce new equations with less variables.
+    $$2x+3y=35$$
+    $$13x-6y=-2$$
+    We notice that we can multiply the first equation by 2 and add the equations together to eliminate \(y\).
+    $$4x+6y+13x-6y=70-2$$
+    $$17y=68$$
+    Then, isolating \(y\) gives \(x=4\). Then we plug in \(x\) to any of the two equations and get \(y=9\).
+  </section>
+    <script src="/coins.js"></script>
+  <script src = "/avatar.js"></script>
+</body>
+
+</html>
