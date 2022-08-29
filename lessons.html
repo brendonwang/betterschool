@@ -1,35 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-    <link rel="stylesheet" href="css/lessons.css" />
-  </head>
-  <body>
-    <div class="navbar">
-      <div class="container">
-        <a class="logo" href="/index.html">School <span>2.0</span></a>
 
-        <nav>
-          <ul class="primary-nav">
-            <li><a href="/index.html">Home</a></li>
-            <li class="current"><a href="#">Lessons</a></li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduHack</title>
+  <script src="/reset.js"></script>
+
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="container">
+      <a class="logo" href="/index.html">School <span>2.0</span></a>
+
+      <nav>
+
+        <ul class="primary-nav">
+          <li><a href="/index.html">Home</a></li>
+          <li class = "current"><a href="/lessons.html">Lessons</a></li>
+          <div class="img">
             <li><a href="/shop.html">Shop</a></li>
-          </ul>
+          </div>
+          <li><a href="/achievements.html">Achievements</a></li>
 
-        </nav>
-      </div>
+        </ul>
+        <ul class="secondary-nav">
+          <div>
+            <li>
+              <p id="coins">0</p>x<img
+                src="https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/coin.svg?v=1661572495636"
+                width="20px" height="20px"> &nbsp &nbsp &nbsp &nbsp
+            </li>
+            <div>
+              <button id="reset" onclick="reset()" class = "reset">Reset</button>
+            </div>
+            <li><img
+                src="https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/poke-removebg-preview.png?v=1661644487585"
+                width="40px" height="40px" class="avatar-nav" id = "avatar-nav">
+            </li>
+          </div>
+        </ul>
+      </nav>
     </div>
-    <section>
-      <div class="row">
-        <div class="column">
-            <a href="/math/index.html" class = "center">Math</a> 
-        </div>
-        <div class="column">
-            <a href="/science" class = "center">Science</a>
-        </div>
-      </div>
-    </section>
-  </body>
+  </div>
+  <section>
+    <div class="row">
+      <h1 class="column">
+        <a href="/math/index.html" class="center">Math</a>
+      </h1>
+      <h1 class="column">
+        <a href="/science" class="center">Science</a>
+      </h1>
+    </div>
+  </section>
+  <script src="/coins.js"></script>
+  <script src = "/avatar.js"></script>
+
+</body>
+
 </html>

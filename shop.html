@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EduHack</title>
+  <script src="/reset.js"></script>
   <link rel="stylesheet" href="css/index.css">
 </head>
-  <body>
-    <div class="navbar">
-      <div class="container">
-        <a class="logo" href="/index.html">School <span>2.0</span></a>
 
-        <nav>
+<body>
+  <div class="navbar">
+    <div class="container">
+      <a class="logo" href="/index.html">School <span>2.0</span></a>
 
-          <ul class="primary-nav">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/lessons.html">Lessons</a></li>
-            <div class="img">
-            <li class="current"><a href = "/shop.html">Shop</a></li>
+      <nav>
+
+        <ul class="primary-nav">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/lessons.html">Lessons</a></li>
+          <div class="img">
+            <li class="current"><a href="/shop.html">Shop</a></li>
+          </div>
+          <li><a href="/achievements.html">Achievements</a></li>
+
+        </ul>
+        <ul class="secondary-nav">
+          <div>
+            <li>
+              <p id="coins">0</p>x<img
+                src="https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/coin.svg?v=1661572495636"
+                width="20px" height="20px"> &nbsp &nbsp &nbsp &nbsp
+            </li>
+            <div>
+              <button id="reset" onclick="reset()" class = "reset">Reset</button>
             </div>
-          </ul>
-        </nav>
-      </div>
+            <li><img
+                src="https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/poke-removebg-preview.png?v=1661644487585"
+                width="40px" height="40px" class="avatar-nav" id = "avatar-nav" onclick = "getcoins()">
+            </li>
+          </div>
+        </ul>
+      </nav>
     </div>
-    <img src = "https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/md-removebg-preview.png?v=1661639792106" width="500px" length="500px">
-    <button id = "b1">buy</button>
-    <img src = "https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/md-removebg-preview.png?v=1661639792106" width = "500px" height = "500px">
-    //balls in your jaws
-    <img src = "https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/arceus-removebg-preview.png?v=1661639967015" width="500px" length="500px">
-    <img src = "https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/dialga-removebg-preview.png?v=1661639887650" width="500px" length="500px">
-    <img src = "https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/md-removebg-preview.png?v=1661639792106" width="500px" length="500px">
-    <img src = "https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/arceus-removebg-preview.png?v=1661639967015" width="500px" length="500px">
-    <img src = "https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/dialga-removebg-preview.png?v=1661639887650" width="500px" length="500px">
-    <img src = "https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/md-removebg-preview.png?v=1661639792106" width="500px" length="500px">
-    <img src = "https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/arceus-removebg-preview.png?v=1661639967015" width="500px" length="500px">
-    <img src = "https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/dialga-removebg-preview.png?v=1661639887650" width="500px" length="500px">
-    </body>
+  </div>
+  <div class="poke" id = "poke">
+    <button id="left" onclick="left()" class="arrow left"> <img
+        src="https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/Untitled.svg?v=1661645306257"> </button>
+    <img src="https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/poke-removebg-preview.png?v=1661644487585"
+      width="500px" height="500px" id="avatar" class = "avatar">
+    <img src = "https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/no.svg?v=1661651785209" id = "no" class = "no">
+    <button id="right" onclick="right()" class="arrow right"><img
+        src="https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/Untitled%20(1).svg?v=1661645373358">
+    </button>
+    <div>
+      <button onclick="buy()" class="buy" id = "buy">Bought</button>
+    </div>
+    <br>
+  </div>
+  <div class = "shop"><img src = "https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/market-removebg-preview.png?v=1661710618306" onclick = "shop()" id = "shop">
+  </div>
+  <script src="/shop.js"></script>
+  <script src="/coins.js"></script>
+  <script src = "/avatar.js"></script>
+
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

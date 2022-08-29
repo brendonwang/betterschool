@@ -1,49 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EduHack</title>
-  <link rel="icon" href="assets/EduHackLogo.svg">
   <link rel="stylesheet" href="css/index.css">
 </head>
-  <body>
-    <div class="navbar">
-      <div class="container">
-        <a class="logo" href="#">School <span>2.0</span></a>
 
-        <nav>
-          <ul class="primary-nav">
-            <li class="current"><a href="#">Home</a></li>
-            <li><a href="/lessons.html">Lessons</a></li>
+<body>
+  <div class="navbar">
+    <div class="container">
+      <a class="logo" href="/index.html">School <span>2.0</span></a>
+
+      <nav>
+
+        <ul class="primary-nav">
+          <li class="current"><a href="/index.html">Home</a></li>
+          <li><a href="/lessons.html">Lessons</a></li>
+          <div class="img">
             <li><a href="/shop.html">Shop</a></li>
-          </ul>
-
-        </nav>
-      </div>
-    </div>
-
-    <section class="hero">
-      <div class="container">
-        <div class="left-col">
-          <p class="subhead">Kick School. Add Fun.</p>
-          <h1>Comprehensive Lessons &amp; Awesome Fun</h1>
-
-          <div class="hero-cta">
-            <a href="/lessons.html" class="primary-cta">Try for free</a>
           </div>
-        </div>
+          <li><a href="/achievements.html">Achievements</a></li>
+        </ul>
+        <ul class="secondary-nav">
+          <div>
+            <li>
+              <p id="coins">0</p>x<img
+                src="https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/coin.svg?v=1661572495636"
+                width="20px" height="20px"> &nbsp &nbsp &nbsp &nbsp
+            </li>
+            <li><img
+                src="https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/poke-removebg-preview.png?v=1661644487585"
+                width="40px" height="40px" class="avatar-nav" id = "avatar-nav"></li>
+          </div>
 
-        <img
-          src="https://assets.codepen.io/2621168/illustration.svg"
-          class="hero-img"
-          alt="Illustration"
-        />
-      </div>
-    </section>
-    <div class = "hero">
-      <a><h1>Teachers? Click Here:</h1></a>
-  
+        </ul>
+      </nav>
+    </div>
   </div>
-  </body>
+
+  <section class="hero">
+    <div class="container">
+      <div class="left-col">
+        <p class="subhead">Kick School. Add Fun.</p>
+        <h1>Comprehensive Lessons &amp; Awesome Fun</h1>
+
+        <div class="hero-cta">
+          <a href="/lessons.html" class="primary-cta">Try for free</a>
+        </div>
+      </div>
+
+      <img
+        src="https://cdn.glitch.global/3501ec51-0efe-4944-b3f1-a842653a5553/logoeduhack-removebg-preview.png?v=1661647403897"
+        class="hero-img" alt="Illustration" />
+    </div>
+  </section>
+  <div class="hero">
+    <a href = "/teacher.html">
+      <h1>Teachers? Click Here:</h1>
+    </a>
+
+  </div>
+  <script src="/coins.js"></script>
+  <script src = "/avatar.js"></script>
+</body>
+
 </html>
