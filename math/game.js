@@ -47,9 +47,9 @@ const questions = shuffle([
 ]);
 const answer_choices = {
   "Solve the equation 9-4x+4=-5x+3-x": [
-    "x=-5",
-    "x=5",
-    "y=-5",
+    "x=-1",
+    "x=1",
+    "y=-1",
     "x=-4",
   ],
   "Solve the equation 2t/3+7=3(t-9)": [
@@ -126,7 +126,7 @@ const answer_choices = {
   ],
 };
 const correct_answer = {
-  "Solve the equation 9-4x+4=-5x+3-x": "x=-5",
+  "Solve the equation 9-4x+4=-5x+3-x": "x=-1",
   "Solve the equation 2t/3+7=3(t-9)": "t=102/7",
   "Find x and y if x-y=3 and 1/x+1/y=1/2": "x=1, y=-2",
   "Find all ordered pairs (x, y) such that -x+2y=8 and x-y=-5": "(-2, 3)",
@@ -204,7 +204,7 @@ function end() {
       localStorage.value = 0;
     }
     localStorage.value = parseInt(coins.innerText);
-    if (j.toString() < 9) localStorage.value -= 10; document.getElementById('coins').innerText = localStorage.value;
+    if (j <= 7) localStorage.value -= 10; document.getElementById('coins').innerText = localStorage.value;
   }
 }
 function b1click() {
@@ -251,5 +251,3 @@ function b4click() {
   console.log(i);
   end();
 }
-//can i make a shop @invisibleflame
-//Yes
